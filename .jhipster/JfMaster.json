@@ -1,0 +1,143 @@
+{
+  "name": "JfMaster",
+  "fields": [
+    {
+      "fieldName": "zygs",
+      "fieldType": "String",
+      "javadoc": "作业公司"
+    },
+    {
+      "fieldName": "je",
+      "fieldType": "BigDecimal",
+      "javadoc": "金额"
+    },
+    {
+      "fieldName": "she",
+      "fieldType": "BigDecimal",
+      "javadoc": "税额"
+    },
+    {
+      "fieldName": "shhje",
+      "fieldType": "BigDecimal",
+      "javadoc": "税后金额"
+    },
+    {
+      "fieldName": "jmje",
+      "fieldType": "BigDecimal",
+      "javadoc": "减免金额"
+    },
+    {
+      "fieldName": "jmhje",
+      "fieldType": "BigDecimal",
+      "javadoc": "减免后总金额"
+    },
+    {
+      "fieldName": "idHw",
+      "fieldType": "Long",
+      "javadoc": "货物表中ID"
+    },
+    {
+      "fieldName": "htid",
+      "fieldType": "Long",
+      "javadoc": "合同对应ID"
+    },
+    {
+      "fieldName": "mb",
+      "fieldType": "String",
+      "javadoc": "贸别"
+    },
+    {
+      "fieldName": "zywtrid",
+      "fieldType": "Long",
+      "javadoc": "作业委托人ID"
+    },
+    {
+      "fieldName": "mark1",
+      "fieldType": "String",
+      "javadoc": "标记1"
+    },
+    {
+      "fieldName": "mark2",
+      "fieldType": "String",
+      "javadoc": "标记2"
+    },
+    {
+      "fieldName": "createby",
+      "fieldType": "String",
+      "javadoc": "创建人"
+    },
+    {
+      "fieldName": "createbyid",
+      "fieldType": "Long",
+      "javadoc": "创建人ID"
+    },
+    {
+      "fieldName": "createon",
+      "fieldType": "LocalDate",
+      "javadoc": "创建日期"
+    },
+    {
+      "fieldName": "createGsid",
+      "fieldType": "String",
+      "javadoc": "创建公司"
+    },
+    {
+      "fieldName": "createGsmch",
+      "fieldType": "String",
+      "javadoc": "创建公司"
+    },
+    {
+      "fieldName": "createBmid",
+      "fieldType": "Long",
+      "javadoc": "创建部门ID"
+    },
+    {
+      "fieldName": "createBmm",
+      "fieldType": "String",
+      "javadoc": "创建部门名称"
+    },
+    {
+      "fieldName": "createGwid",
+      "fieldType": "String",
+      "javadoc": "创建岗位"
+    },
+    {
+      "fieldName": "createGwm",
+      "fieldType": "String",
+      "javadoc": "创建岗位"
+    },
+    {
+      "fieldName": "modifyby",
+      "fieldType": "String",
+      "javadoc": "修改人"
+    },
+    {
+      "fieldName": "modifybyid",
+      "fieldType": "Long",
+      "javadoc": "修改人ID"
+    },
+    {
+      "fieldName": "modifyon",
+      "fieldType": "LocalDate",
+      "javadoc": "修改日期"
+    }
+  ],
+  "relationships": [
+    {
+      "relationshipType": "one-to-many",
+      "otherEntityName": "btJfJtJfmx",
+      "otherEntityRelationshipName": "master",
+      "relationshipName": "btjfjtjfmx"
+    }
+  ],
+  "entityTableName": "jf_master",
+  "dto": "no",
+  "pagination": "pagination",
+  "service": "serviceClass",
+  "jpaMetamodelFiltering": false,
+  "fluentMethods": true,
+  "readOnly": false,
+  "embedded": false,
+  "applications": "*",
+  "changelogDate": "20210409051617"
+}

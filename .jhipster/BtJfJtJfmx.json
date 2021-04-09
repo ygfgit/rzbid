@@ -1,0 +1,153 @@
+{
+  "name": "BtJfJtJfmx",
+  "fields": [
+    {
+      "fieldName": "zygs",
+      "fieldType": "Long",
+      "javadoc": "作业公司（保存公司代码，参照附件1中公司代码表）"
+    },
+    {
+      "fieldName": "zyetrid",
+      "fieldType": "Long",
+      "javadoc": "作业委托人ID"
+    },
+    {
+      "fieldName": "flmch",
+      "fieldType": "String",
+      "javadoc": "费率名称（A类、B类、C类）"
+    },
+    {
+      "fieldName": "fl",
+      "fieldType": "BigDecimal",
+      "javadoc": "费率（从费率表中匹配的费率，阶梯费率时可以为空）"
+    },
+    {
+      "fieldName": "shl",
+      "fieldType": "Double",
+      "javadoc": "货物重量"
+    },
+    {
+      "fieldName": "je",
+      "fieldType": "BigDecimal",
+      "javadoc": "金额"
+    },
+    {
+      "fieldName": "shlv",
+      "fieldType": "BigDecimal",
+      "javadoc": "税率（费率表中税率）"
+    },
+    {
+      "fieldName": "she",
+      "fieldType": "BigDecimal",
+      "javadoc": "税额"
+    },
+    {
+      "fieldName": "shhje",
+      "fieldType": "BigDecimal",
+      "javadoc": "税后金额"
+    },
+    {
+      "fieldName": "jmje",
+      "fieldType": "BigDecimal",
+      "javadoc": "减免金额"
+    },
+    {
+      "fieldName": "startd",
+      "fieldType": "LocalDate",
+      "javadoc": "开始日期(用于计算B类计费)"
+    },
+    {
+      "fieldName": "endd",
+      "fieldType": "LocalDate",
+      "javadoc": "结束始日期(用于计算B类计费)"
+    },
+    {
+      "fieldName": "mark1",
+      "fieldType": "String",
+      "javadoc": "标记1"
+    },
+    {
+      "fieldName": "mark2",
+      "fieldType": "String",
+      "javadoc": "标记2"
+    },
+    {
+      "fieldName": "createby",
+      "fieldType": "String",
+      "javadoc": "创建人"
+    },
+    {
+      "fieldName": "createbyid",
+      "fieldType": "Long",
+      "javadoc": "创建人ID"
+    },
+    {
+      "fieldName": "createon",
+      "fieldType": "LocalDate",
+      "javadoc": "创建日期"
+    },
+    {
+      "fieldName": "createGsid",
+      "fieldType": "String",
+      "javadoc": "创建公司"
+    },
+    {
+      "fieldName": "createGsmch",
+      "fieldType": "String",
+      "javadoc": "创建公司"
+    },
+    {
+      "fieldName": "createBmid",
+      "fieldType": "Long",
+      "javadoc": "创建部门ID"
+    },
+    {
+      "fieldName": "createBmm",
+      "fieldType": "String",
+      "javadoc": "创建部门名称"
+    },
+    {
+      "fieldName": "createGwid",
+      "fieldType": "Long",
+      "javadoc": "创建岗位"
+    },
+    {
+      "fieldName": "createGwm",
+      "fieldType": "String",
+      "javadoc": "创建岗位"
+    },
+    {
+      "fieldName": "modifyby",
+      "fieldType": "String",
+      "javadoc": "修改人"
+    },
+    {
+      "fieldName": "modifybyid",
+      "fieldType": "Long",
+      "javadoc": "修改人ID"
+    },
+    {
+      "fieldName": "modifyon",
+      "fieldType": "LocalDate",
+      "javadoc": "修改日期"
+    }
+  ],
+  "relationships": [
+    {
+      "relationshipType": "many-to-one",
+      "otherEntityName": "jfMaster",
+      "otherEntityRelationshipName": "btjfjtjfmx",
+      "relationshipName": "master"
+    }
+  ],
+  "entityTableName": "bt_jf_jt_jfmx",
+  "dto": "no",
+  "pagination": "pagination",
+  "service": "no",
+  "jpaMetamodelFiltering": false,
+  "fluentMethods": true,
+  "readOnly": false,
+  "embedded": false,
+  "applications": "*",
+  "changelogDate": "20210409051618"
+}

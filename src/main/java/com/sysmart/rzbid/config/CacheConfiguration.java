@@ -48,6 +48,9 @@ public class CacheConfiguration {
             createCache(cm, com.sysmart.rzbid.domain.User.class.getName());
             createCache(cm, com.sysmart.rzbid.domain.Authority.class.getName());
             createCache(cm, com.sysmart.rzbid.domain.User.class.getName() + ".authorities");
+            createCache(cm, com.sysmart.rzbid.domain.JfMaster.class.getName());
+            createCache(cm, com.sysmart.rzbid.domain.JfMaster.class.getName() + ".btjfjtjfmxes");
+            createCache(cm, com.sysmart.rzbid.domain.BtJfJtJfmx.class.getName());
             // jhipster-needle-ehcache-add-entry
         };
     }

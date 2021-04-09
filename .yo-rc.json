@@ -41,6 +41,8 @@
     "jwtSecretKey": "MzdkMDcwODlmMDcxMWQ3NDNhZWI0NGQ5YTk4YzRkMzhkZjMwMmIwMTMzN2RhOTU4N2ZlMWNiMjg1NTY0YmJmMGU2M2YzNDM0MGJmNTE4MDQwMzE0OTc2NDk2NDAyMTdhZDQyYjQyNTIzMjk0YWE0M2IwOWI1MTg4ZmJiZTMyNmU=",
     "clientPackageManager": "npm",
     "clientThemeVariant": "",
-    "languages": ["zh-cn", "en", "ja"]
+    "languages": ["zh-cn", "en", "ja"],
+    "entities": ["JfMaster", "BtJfJtJfmx"],
+    "lastLiquibaseTimestamp": 1617945378000
   }
 }

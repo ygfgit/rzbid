@@ -1,0 +1,78 @@
+{
+  "rzbidApp": {
+    "btJfJtJfmx": {
+      "home": {
+        "title": "Bt Jf Jt Jfmxes",
+        "refreshListLabel": "Refresh list",
+        "createLabel": "创建新 Bt Jf Jt Jfmx",
+        "createOrEditLabel": "创建或编辑 Bt Jf Jt Jfmx",
+        "notFound": "No Bt Jf Jt Jfmxes found"
+      },
+      "created": "Bt Jf Jt Jfmx {{ param }} 创建成功",
+      "updated": "Bt Jf Jt Jfmx {{ param }} 更新成功",
+      "deleted": "Bt Jf Jt Jfmx {{ param }} 删除成功",
+      "delete": {
+        "question": "你确定要删除 Bt Jf Jt Jfmx {{ id }} 吗？"
+      },
+      "detail": {
+        "title": "Bt Jf Jt Jfmx"
+      },
+      "id": "ID",
+      "zygs": "Zygs",
+      "zyetrid": "Zyetrid",
+      "flmch": "Flmch",
+      "fl": "Fl",
+      "shl": "Shl",
+      "je": "Je",
+      "shlv": "Shlv",
+      "she": "She",
+      "shhje": "Shhje",
+      "jmje": "Jmje",
+      "startd": "Startd",
+      "endd": "Endd",
+      "mark1": "Mark 1",
+      "mark2": "Mark 2",
+      "createby": "Createby",
+      "createbyid": "Createbyid",
+      "createon": "Createon",
+      "createGsid": "Create Gsid",
+      "createGsmch": "Create Gsmch",
+      "createBmid": "Create Bmid",
+      "createBmm": "Create Bmm",
+      "createGwid": "Create Gwid",
+      "createGwm": "Create Gwm",
+      "modifyby": "Modifyby",
+      "modifybyid": "Modifybyid",
+      "modifyon": "Modifyon",
+      "master": "Master",
+      "help": {
+        "zygs": "作业公司（保存公司代码，参照附件1中公司代码表）",
+        "zyetrid": "作业委托人ID",
+        "flmch": "费率名称（A类、B类、C类）",
+        "fl": "费率（从费率表中匹配的费率，阶梯费率时可以为空）",
+        "shl": "货物重量",
+        "je": "金额",
+        "shlv": "税率（费率表中税率）",
+        "she": "税额",
+        "shhje": "税后金额",
+        "jmje": "减免金额",
+        "startd": "开始日期(用于计算B类计费)",
+        "endd": "结束始日期(用于计算B类计费)",
+        "mark1": "标记1",
+        "mark2": "标记2",
+        "createby": "创建人",
+        "createbyid": "创建人ID",
+        "createon": "创建日期",
+        "createGsid": "创建公司",
+        "createGsmch": "创建公司",
+        "createBmid": "创建部门ID",
+        "createBmm": "创建部门名称",
+        "createGwid": "创建岗位",
+        "createGwm": "创建岗位",
+        "modifyby": "修改人",
+        "modifybyid": "修改人ID",
+        "modifyon": "修改日期"
+      }
+    }
+  }
+}

@@ -1,0 +1,74 @@
+{
+  "rzbidApp": {
+    "jfMaster": {
+      "home": {
+        "title": "Jf Masters",
+        "refreshListLabel": "Refresh list",
+        "createLabel": "Create a new Jf Master",
+        "createOrEditLabel": "Create or edit a Jf Master",
+        "notFound": "No Jf Masters found"
+      },
+      "created": "A new Jf Master is created with identifier {{ param }}",
+      "updated": "A Jf Master is updated with identifier {{ param }}",
+      "deleted": "A Jf Master is deleted with identifier {{ param }}",
+      "delete": {
+        "question": "Are you sure you want to delete Jf Master {{ id }}?"
+      },
+      "detail": {
+        "title": "Jf Master"
+      },
+      "id": "ID",
+      "zygs": "Zygs",
+      "je": "Je",
+      "she": "She",
+      "shhje": "Shhje",
+      "jmje": "Jmje",
+      "jmhje": "Jmhje",
+      "idHw": "Id Hw",
+      "htid": "Htid",
+      "mb": "Mb",
+      "zywtrid": "Zywtrid",
+      "mark1": "Mark 1",
+      "mark2": "Mark 2",
+      "createby": "Createby",
+      "createbyid": "Createbyid",
+      "createon": "Createon",
+      "createGsid": "Create Gsid",
+      "createGsmch": "Create Gsmch",
+      "createBmid": "Create Bmid",
+      "createBmm": "Create Bmm",
+      "createGwid": "Create Gwid",
+      "createGwm": "Create Gwm",
+      "modifyby": "Modifyby",
+      "modifybyid": "Modifybyid",
+      "modifyon": "Modifyon",
+      "btjfjtjfmx": "Btjfjtjfmx",
+      "help": {
+        "zygs": "作业公司",
+        "je": "金额",
+        "she": "税额",
+        "shhje": "税后金额",
+        "jmje": "减免金额",
+        "jmhje": "减免后总金额",
+        "idHw": "货物表中ID",
+        "htid": "合同对应ID",
+        "mb": "贸别",
+        "zywtrid": "作业委托人ID",
+        "mark1": "标记1",
+        "mark2": "标记2",
+        "createby": "创建人",
+        "createbyid": "创建人ID",
+        "createon": "创建日期",
+        "createGsid": "创建公司",
+        "createGsmch": "创建公司",
+        "createBmid": "创建部门ID",
+        "createBmm": "创建部门名称",
+        "createGwid": "创建岗位",
+        "createGwm": "创建岗位",
+        "modifyby": "修改人",
+        "modifybyid": "修改人ID",
+        "modifyon": "修改日期"
+      }
+    }
+  }
+}

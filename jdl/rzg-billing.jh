@@ -1,0 +1,65 @@
+
+entity JfMaster {
+    zygs	String 	 /** 	作业公司	 */ 
+    je	BigDecimal	 /** 	金额	 */ 
+    she	BigDecimal	 /** 	税额	 */ 
+    shhje	BigDecimal	 /** 	税后金额	 */ 
+    jmje	BigDecimal	 /** 	减免金额	 */ 
+    jmhje	BigDecimal	 /** 	减免后总金额	 */ 
+    idHw	Long	 /** 	货物表中ID	 */ 
+    htid	Long	 /** 	合同对应ID	 */ 
+    mb	String 	 /** 	贸别	 */ 
+    zywtrid	Long	 /** 	作业委托人ID	 */ 
+    mark1	String 	 /** 	标记1	 */ 
+    mark2	String 	 /** 	标记2	 */ 
+    createby	String 	 /** 	创建人	 */ 
+    createbyid	Long	 /** 	创建人ID	 */ 
+    createon	LocalDate	 /** 	创建日期	 */ 
+    createGsid	String 	 /** 	创建公司	 */ 
+    createGsmch	String 	 /** 	创建公司	 */ 
+    createBmid	Long	 /** 	创建部门ID	 */ 
+    createBmm	String 	 /** 	创建部门名称	 */ 
+    createGwid	String 	 /** 	创建岗位	 */ 
+    createGwm	String 	 /** 	创建岗位	 */ 
+    modifyby	String 	 /** 	修改人	 */ 
+    modifybyid	Long	 /** 	修改人ID	 */ 
+    modifyon	LocalDate	 /** 	修改日期	 */ 
+}
+
+entity BtJfJtJfmx {
+     zygs	Long	 /** 	作业公司（保存公司代码，参照附件1中公司代码表）	 */ 
+    zyetrid	Long	 /** 	作业委托人ID	 */ 
+    flmch	String 	 /** 	费率名称（A类、B类、C类）	 */ 
+    fl	BigDecimal	 /** 	费率（从费率表中匹配的费率，阶梯费率时可以为空）	 */ 
+    shl	Double	 /** 	货物重量	 */ 
+    je	BigDecimal	 /** 	金额	 */ 
+    shlv	BigDecimal	 /** 	税率（费率表中税率）	 */ 
+    she	BigDecimal	 /** 	税额	 */ 
+    shhje	BigDecimal	 /** 	税后金额	 */ 
+    jmje	BigDecimal	 /** 	减免金额	 */ 
+    startd	LocalDate	 /** 	开始日期(用于计算B类计费)	 */ 
+    endd	LocalDate	 /** 	结束始日期(用于计算B类计费)	 */ 
+    mark1	String 	 /** 	标记1	 */ 
+    mark2	String 	 /** 	标记2	 */ 
+    createby	String 	 /** 	创建人	 */ 
+    createbyid	Long	 /** 	创建人ID	 */ 
+    createon	LocalDate	 /** 	创建日期	 */ 
+    createGsid	String 	 /** 	创建公司	 */ 
+    createGsmch	String 	 /** 	创建公司	 */ 
+    createBmid	Long	 /** 	创建部门ID	 */ 
+    createBmm	String 	 /** 	创建部门名称	 */ 
+    createGwid	Long	 /** 	创建岗位	 */ 
+    createGwm	String 	 /** 	创建岗位	 */ 
+    modifyby	String 	 /** 	修改人	 */ 
+    modifybyid	Long	 /** 	修改人ID	 */ 
+    modifyon	LocalDate	 /** 	修改日期	 */ 
+}
+
+relationship OneToMany {
+    JfMaster{btjfjtjfmx} to BtJfJtJfmx{master}
+}
+
+
+paginate JfMaster, BtJfJtJfmx with pagination
+
+service JfMaster with serviceClass

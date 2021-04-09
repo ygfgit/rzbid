@@ -1,0 +1,70 @@
+
+/**
+ * 货物信息表
+ * @author sysmart
+ */
+entity JfCargo {
+    rq	LocalDate	 /** 	集港时间	 */ 
+    zygsdm	String 	 /** 	作业公司代码	 */ 
+    hth	String 	 /** 	合同号	 */ 
+    zywtrid	Long	 /** 	作业委托人ID	 */ 
+    zywtr	String 	 /** 	作业委托人	 */ 
+    zhwchm	String 	 /** 	中文船名	 */ 
+    hwmch	String 	 /** 	货物名称	 */ 
+    gq	String 	 /** 	罐区	 */ 
+    shl	Double	 /** 	总重量	 */ 
+    syl	Double	 /** 	港存剩余量	 */ 
+}
+
+entity JfCustomer {
+	name String maxlength(50)
+}
+
+entity JfCompany {
+	name String maxlength(50)
+}
+
+entity JfTank {
+	zone String  /**  库区 */
+	code String  /**  罐号 */
+}
+
+/**
+ * 表单提报主表
+ * @author sysmart
+ */
+entity JfWork {
+    hwmch	String 	 /** 	货物名称	 */ 
+    jhsl	Double	 /** 	计划数量	 */ 
+    bz	String 	 /** 	备注	 */ 
+}
+/**
+ * 流向信息表
+ * @author sysmart
+ */
+ entity JfTarget {
+    flzl	Double	 /** 	分流重量	 */ 
+}
+
+/**
+ * 作业详细信息表
+ * @author sysmart
+ */
+entity JfWorkDetail {
+    rq	LocalDate	 /** 	日期	 */ 
+    lb	String 	 /** 	集疏港类别	 */ 
+    shl	Double 	 /** 	数量	 */ 
+    gq	String	 /** 	罐区	 */ 
+    syl	Double	 /** 	港存剩余量	 */ 
+}
+
+relationship OneToMany {
+    JfWork{cargo} to JfCargo{master}
+    JfWork{taget} to JfTarget{master}
+    JfWork{tank} to JfTank{master}
+    JfWork{detail} to JfWorkDetail{master}
+}
+
+
+paginate JfWork, JfWorkDetail with pagination
+

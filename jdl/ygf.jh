@@ -1,0 +1,24 @@
+entity YgfPerson(smart_person){
+	name String maxlength(50) required /** 	姓名	 */ 
+	mobilePhone String maxlength(25) /** 	手机	 */ 
+	emailAddress String maxlength(50) /** 	邮箱	 */ 
+	jobTitle String maxlength(50) /** 	头衔	 */ 
+	businessPhone String maxlength(25)
+	homePhone String maxlength(25) /** 	传真	 */ 
+	faxNumber String maxlength(25) /** 	住址	 */ 
+	address TextBlob
+}
+
+entity YgfCar(smart_car){
+	name String maxlength(50) required /** 	姓名	 */ 
+	model String maxlength(50) /** 	车型号	 */ 
+	produceYear Instant /** 	生产时间	 */ 
+}
+
+relationship OneToMany {
+  YgfPerson{ownedCar} to YgfCar{owner}
+}
+
+relationship OneToMany {
+  YgfPerson{drivedCar} to YgfCar{driver}
+}
