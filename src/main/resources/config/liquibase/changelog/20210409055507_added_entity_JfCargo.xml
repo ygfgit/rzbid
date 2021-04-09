@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<databaseChangeLog
+    xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+    xmlns:ext="http://www.liquibase.org/xml/ns/dbchangelog-ext"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-4.3.xsd
+                        http://www.liquibase.org/xml/ns/dbchangelog-ext http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-ext.xsd">
+
+    <!--
+        Added the entity JfCargo.
+    -->
+    <changeSet id="20210409055507-1" author="jhipster">
+        <createTable tableName="jf_cargo" remarks="货物信息表\n@author sysmart">
+            <column name="id" type="bigint">
+                <constraints primaryKey="true" nullable="false"/>
+            </column>
+            <column name="rq" type="date" remarks="集港时间">
+                <constraints nullable="true" />
+            </column>
+            <column name="zygsdm" type="varchar(255)" remarks="作业公司代码">
+                <constraints nullable="true" />
+            </column>
+            <column name="hth" type="varchar(255)" remarks="合同号">
+                <constraints nullable="true" />
+            </column>
+            <column name="zywtrid" type="bigint" remarks="作业委托人ID">
+                <constraints nullable="true" />
+            </column>
+            <column name="zywtr" type="varchar(255)" remarks="作业委托人">
+                <constraints nullable="true" />
+            </column>
+            <column name="zhwchm" type="varchar(255)" remarks="中文船名">
+                <constraints nullable="true" />
+            </column>
+            <column name="hwmch" type="varchar(255)" remarks="货物名称">
+                <constraints nullable="true" />
+            </column>
+            <column name="gq" type="varchar(255)" remarks="罐区">
+                <constraints nullable="true" />
+            </column>
+            <column name="shl" type="double" remarks="总重量">
+                <constraints nullable="true" />
+            </column>
+            <column name="syl" type="double" remarks="港存剩余量">
+                <constraints nullable="true" />
+            </column>
+            <column name="master_id" type="bigint">
+                <constraints nullable="true" />
+            </column>
+            <!-- jhipster-needle-liquibase-add-column - JHipster will add columns here -->
+        </createTable>
+    </changeSet>
+
+    <!-- jhipster-needle-liquibase-add-changeset - JHipster will add changesets here -->
+
+    <!--
+        Load sample data generated with Faker.js
+        - This data can be easily edited using a CSV editor (or even MS Excel) and
+          is located in the 'src/main/resources/config/liquibase/fake-data' directory
+        - By default this data is applied when running with the JHipster 'dev' profile.
+          This can be customized by adding or removing 'faker' in the 'spring.liquibase.contexts'
+          Spring Boot configuration key.
+    -->
+    <changeSet id="20210409055507-1-data" author="jhipster" context="faker">
+        <loadData
+                  file="config/liquibase/fake-data/jf_cargo.csv"
+                  separator=";"
+                  tableName="jf_cargo">
+            <column name="id" type="numeric"/>
+            <column name="rq" type="date"/>
+            <column name="zygsdm" type="string"/>
+            <column name="hth" type="string"/>
+            <column name="zywtrid" type="numeric"/>
+            <column name="zywtr" type="string"/>
+            <column name="zhwchm" type="string"/>
+            <column name="hwmch" type="string"/>
+            <column name="gq" type="string"/>
+            <column name="shl" type="numeric"/>
+            <column name="syl" type="numeric"/>
+            <!-- jhipster-needle-liquibase-add-loadcolumn - JHipster (and/or extensions) can add load columns here -->
+        </loadData>
+    </changeSet>
+</databaseChangeLog>

@@ -50,7 +50,7 @@ entity JfWork {
  * 作业详细信息表
  * @author sysmart
  */
-entity JfWorkDetail {
+entity JfWorkDetails {
     rq	LocalDate	 /** 	日期	 */ 
     lb	String 	 /** 	集疏港类别	 */ 
     shl	Double 	 /** 	数量	 */ 
@@ -62,9 +62,9 @@ relationship OneToMany {
     JfWork{cargo} to JfCargo{master}
     JfWork{taget} to JfTarget{master}
     JfWork{tank} to JfTank{master}
-    JfWork{detail} to JfWorkDetail{master}
+    JfWork{detail} to JfWorkDetails{master}
 }
 
 
-paginate JfWork, JfWorkDetail with pagination
+paginate JfWork, JfWorkDetails with pagination
 

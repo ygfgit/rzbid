@@ -42,7 +42,7 @@
     "clientPackageManager": "npm",
     "clientThemeVariant": "",
     "languages": ["zh-cn", "en", "ja"],
-    "entities": ["JfMaster", "BtJfJtJfmx"],
-    "lastLiquibaseTimestamp": 1617945378000
+    "entities": ["JfMaster", "BtJfJtJfmx", "JfCargo", "JfCustomer", "JfCompany", "JfTank", "JfWork", "JfTarget", "JfWorkDetails"],
+    "lastLiquibaseTimestamp": 1617947730000
   }
 }

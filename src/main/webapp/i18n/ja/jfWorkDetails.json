@@ -1,0 +1,36 @@
+{
+  "rzbidApp": {
+    "jfWorkDetails": {
+      "home": {
+        "title": "JfWorkDetails",
+        "refreshListLabel": "Refresh list",
+        "createLabel": "Jf Work Details を追加",
+        "createOrEditLabel": "Jf Work Detailsを追加または編集",
+        "notFound": "No Jf Work Details found"
+      },
+      "created": "A new Jf Work Details is created with identifier {{ param }}",
+      "updated": "A Jf Work Details is updated with identifier {{ param }}",
+      "deleted": "A Jf Work Details is deleted with identifier {{ param }}",
+      "delete": {
+        "question": "Jf Work Details {{ id }}を削除してもよろしいですか？"
+      },
+      "detail": {
+        "title": "Jf Work Details"
+      },
+      "id": "ID",
+      "rq": "Rq",
+      "lb": "Lb",
+      "shl": "Shl",
+      "gq": "Gq",
+      "syl": "Syl",
+      "master": "Master",
+      "help": {
+        "rq": "日期",
+        "lb": "集疏港类别",
+        "shl": "数量",
+        "gq": "罐区",
+        "syl": "港存剩余量"
+      }
+    }
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "name": "JfTarget",
+  "fields": [
+    {
+      "fieldName": "flzl",
+      "fieldType": "Double",
+      "javadoc": "分流重量"
+    }
+  ],
+  "relationships": [
+    {
+      "relationshipType": "many-to-one",
+      "otherEntityName": "jfWork",
+      "otherEntityRelationshipName": "taget",
+      "relationshipName": "master"
+    }
+  ],
+  "javadoc": "流向信息表\\n@author sysmart",
+  "entityTableName": "jf_target",
+  "dto": "no",
+  "pagination": "no",
+  "service": "no",
+  "jpaMetamodelFiltering": false,
+  "fluentMethods": true,
+  "readOnly": false,
+  "embedded": false,
+  "applications": "*",
+  "changelogDate": "20210409055512"
+}

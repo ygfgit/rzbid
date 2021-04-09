@@ -51,6 +51,17 @@ public class CacheConfiguration {
             createCache(cm, com.sysmart.rzbid.domain.JfMaster.class.getName());
             createCache(cm, com.sysmart.rzbid.domain.JfMaster.class.getName() + ".btjfjtjfmxes");
             createCache(cm, com.sysmart.rzbid.domain.BtJfJtJfmx.class.getName());
+            createCache(cm, com.sysmart.rzbid.domain.JfCargo.class.getName());
+            createCache(cm, com.sysmart.rzbid.domain.JfCustomer.class.getName());
+            createCache(cm, com.sysmart.rzbid.domain.JfCompany.class.getName());
+            createCache(cm, com.sysmart.rzbid.domain.JfTank.class.getName());
+            createCache(cm, com.sysmart.rzbid.domain.JfWork.class.getName());
+            createCache(cm, com.sysmart.rzbid.domain.JfWork.class.getName() + ".cargos");
+            createCache(cm, com.sysmart.rzbid.domain.JfWork.class.getName() + ".tagets");
+            createCache(cm, com.sysmart.rzbid.domain.JfWork.class.getName() + ".tanks");
+            createCache(cm, com.sysmart.rzbid.domain.JfWork.class.getName() + ".details");
+            createCache(cm, com.sysmart.rzbid.domain.JfTarget.class.getName());
+            createCache(cm, com.sysmart.rzbid.domain.JfWorkDetails.class.getName());
             // jhipster-needle-ehcache-add-entry
         };
     }

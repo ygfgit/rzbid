@@ -1,0 +1,46 @@
+{
+  "rzbidApp": {
+    "jfCargo": {
+      "home": {
+        "title": "Jf Cargos",
+        "refreshListLabel": "Refresh list",
+        "createLabel": "创建新 Jf Cargo",
+        "createOrEditLabel": "创建或编辑 Jf Cargo",
+        "notFound": "No Jf Cargos found"
+      },
+      "created": "Jf Cargo {{ param }} 创建成功",
+      "updated": "Jf Cargo {{ param }} 更新成功",
+      "deleted": "Jf Cargo {{ param }} 删除成功",
+      "delete": {
+        "question": "你确定要删除 Jf Cargo {{ id }} 吗？"
+      },
+      "detail": {
+        "title": "Jf Cargo"
+      },
+      "id": "ID",
+      "rq": "Rq",
+      "zygsdm": "Zygsdm",
+      "hth": "Hth",
+      "zywtrid": "Zywtrid",
+      "zywtr": "Zywtr",
+      "zhwchm": "Zhwchm",
+      "hwmch": "Hwmch",
+      "gq": "Gq",
+      "shl": "Shl",
+      "syl": "Syl",
+      "master": "Master",
+      "help": {
+        "rq": "集港时间",
+        "zygsdm": "作业公司代码",
+        "hth": "合同号",
+        "zywtrid": "作业委托人ID",
+        "zywtr": "作业委托人",
+        "zhwchm": "中文船名",
+        "hwmch": "货物名称",
+        "gq": "罐区",
+        "shl": "总重量",
+        "syl": "港存剩余量"
+      }
+    }
+  }
+}

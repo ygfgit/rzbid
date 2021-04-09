@@ -29,6 +29,13 @@ import UserOAuth2Service from '@/entities/user/user.oauth2.service';
 
 import JfMasterService from '@/entities/jf-master/jf-master.service';
 import BtJfJtJfmxService from '@/entities/bt-jf-jt-jfmx/bt-jf-jt-jfmx.service';
+import JfCargoService from '@/entities/jf-cargo/jf-cargo.service';
+import JfCustomerService from '@/entities/jf-customer/jf-customer.service';
+import JfCompanyService from '@/entities/jf-company/jf-company.service';
+import JfTankService from '@/entities/jf-tank/jf-tank.service';
+import JfWorkService from '@/entities/jf-work/jf-work.service';
+import JfTargetService from '@/entities/jf-target/jf-target.service';
+import JfWorkDetailsService from '@/entities/jf-work-details/jf-work-details.service';
 // jhipster-needle-add-entity-service-to-main-import - JHipster will import entities services here
 
 /* tslint:enable */
@@ -89,6 +96,13 @@ new Vue({
     translationService: () => translationService,
     jfMasterService: () => new JfMasterService(),
     btJfJtJfmxService: () => new BtJfJtJfmxService(),
+    jfCargoService: () => new JfCargoService(),
+    jfCustomerService: () => new JfCustomerService(),
+    jfCompanyService: () => new JfCompanyService(),
+    jfTankService: () => new JfTankService(),
+    jfWorkService: () => new JfWorkService(),
+    jfTargetService: () => new JfTargetService(),
+    jfWorkDetailsService: () => new JfWorkDetailsService(),
     // jhipster-needle-add-entity-service-to-main - JHipster will import entities services here
     accountService: () => accountService,
   },

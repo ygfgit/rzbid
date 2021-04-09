@@ -9,6 +9,13 @@
         "main": "数据",
         "jfMaster": "Jf Master",
         "btJfJtJfmx": "Bt Jf Jt Jfmx",
+        "jfCargo": "Jf Cargo",
+        "jfCustomer": "Jf Customer",
+        "jfCompany": "Jf Company",
+        "jfTank": "Jf Tank",
+        "jfWork": "Jf Work",
+        "jfTarget": "Jf Target",
+        "jfWorkDetails": "Jf Work Details",
         "jhipster-needle-menu-add-entry": "JHipster will add additional entities here (do not translate!)"
       },
       "account": {

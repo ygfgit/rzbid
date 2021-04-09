@@ -1,0 +1,35 @@
+{
+  "rzbidApp": {
+    "jfWork": {
+      "home": {
+        "title": "Jf Works",
+        "refreshListLabel": "Refresh list",
+        "createLabel": "创建新 Jf Work",
+        "createOrEditLabel": "创建或编辑 Jf Work",
+        "notFound": "No Jf Works found"
+      },
+      "created": "Jf Work {{ param }} 创建成功",
+      "updated": "Jf Work {{ param }} 更新成功",
+      "deleted": "Jf Work {{ param }} 删除成功",
+      "delete": {
+        "question": "你确定要删除 Jf Work {{ id }} 吗？"
+      },
+      "detail": {
+        "title": "Jf Work"
+      },
+      "id": "ID",
+      "hwmch": "Hwmch",
+      "jhsl": "Jhsl",
+      "bz": "Bz",
+      "cargo": "Cargo",
+      "taget": "Taget",
+      "tank": "Tank",
+      "detail": "Detail",
+      "help": {
+        "hwmch": "货物名称",
+        "jhsl": "计划数量",
+        "bz": "备注"
+      }
+    }
+  }
+}

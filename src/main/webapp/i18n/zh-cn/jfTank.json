@@ -1,0 +1,30 @@
+{
+  "rzbidApp": {
+    "jfTank": {
+      "home": {
+        "title": "Jf Tanks",
+        "refreshListLabel": "Refresh list",
+        "createLabel": "创建新 Jf Tank",
+        "createOrEditLabel": "创建或编辑 Jf Tank",
+        "notFound": "No Jf Tanks found"
+      },
+      "created": "Jf Tank {{ param }} 创建成功",
+      "updated": "Jf Tank {{ param }} 更新成功",
+      "deleted": "Jf Tank {{ param }} 删除成功",
+      "delete": {
+        "question": "你确定要删除 Jf Tank {{ id }} 吗？"
+      },
+      "detail": {
+        "title": "Jf Tank"
+      },
+      "id": "ID",
+      "zone": "Zone",
+      "code": "Code",
+      "master": "Master",
+      "help": {
+        "zone": "库区",
+        "code": "罐号"
+      }
+    }
+  }
+}

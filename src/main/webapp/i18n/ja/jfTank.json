@@ -1,0 +1,30 @@
+{
+  "rzbidApp": {
+    "jfTank": {
+      "home": {
+        "title": "JfTanks",
+        "refreshListLabel": "Refresh list",
+        "createLabel": "Jf Tank を追加",
+        "createOrEditLabel": "Jf Tankを追加または編集",
+        "notFound": "No Jf Tanks found"
+      },
+      "created": "A new Jf Tank is created with identifier {{ param }}",
+      "updated": "A Jf Tank is updated with identifier {{ param }}",
+      "deleted": "A Jf Tank is deleted with identifier {{ param }}",
+      "delete": {
+        "question": "Jf Tank {{ id }}を削除してもよろしいですか？"
+      },
+      "detail": {
+        "title": "Jf Tank"
+      },
+      "id": "ID",
+      "zone": "Zone",
+      "code": "Code",
+      "master": "Master",
+      "help": {
+        "zone": "库区",
+        "code": "罐号"
+      }
+    }
+  }
+}

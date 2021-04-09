@@ -37,6 +37,42 @@
             <font-awesome-icon icon="asterisk" />
             <span v-text="$t('global.menu.entities.btJfJtJfmx')">Bt Jf Jt Jfmx</span>
           </b-dropdown-item>
+          <b-dropdown-item to="/jf-master">
+            <font-awesome-icon icon="asterisk" />
+            <span v-text="$t('global.menu.entities.jfMaster')">Jf Master</span>
+          </b-dropdown-item>
+          <b-dropdown-item to="/bt-jf-jt-jfmx">
+            <font-awesome-icon icon="asterisk" />
+            <span v-text="$t('global.menu.entities.btJfJtJfmx')">Bt Jf Jt Jfmx</span>
+          </b-dropdown-item>
+          <b-dropdown-item to="/jf-cargo">
+            <font-awesome-icon icon="asterisk" />
+            <span v-text="$t('global.menu.entities.jfCargo')">Jf Cargo</span>
+          </b-dropdown-item>
+          <b-dropdown-item to="/jf-customer">
+            <font-awesome-icon icon="asterisk" />
+            <span v-text="$t('global.menu.entities.jfCustomer')">Jf Customer</span>
+          </b-dropdown-item>
+          <b-dropdown-item to="/jf-company">
+            <font-awesome-icon icon="asterisk" />
+            <span v-text="$t('global.menu.entities.jfCompany')">Jf Company</span>
+          </b-dropdown-item>
+          <b-dropdown-item to="/jf-tank">
+            <font-awesome-icon icon="asterisk" />
+            <span v-text="$t('global.menu.entities.jfTank')">Jf Tank</span>
+          </b-dropdown-item>
+          <b-dropdown-item to="/jf-work">
+            <font-awesome-icon icon="asterisk" />
+            <span v-text="$t('global.menu.entities.jfWork')">Jf Work</span>
+          </b-dropdown-item>
+          <b-dropdown-item to="/jf-target">
+            <font-awesome-icon icon="asterisk" />
+            <span v-text="$t('global.menu.entities.jfTarget')">Jf Target</span>
+          </b-dropdown-item>
+          <b-dropdown-item to="/jf-work-details">
+            <font-awesome-icon icon="asterisk" />
+            <span v-text="$t('global.menu.entities.jfWorkDetails')">Jf Work Details</span>
+          </b-dropdown-item>
           <!-- jhipster-needle-add-entity-to-menu - JHipster will add entities to the menu here -->
         </b-nav-item-dropdown>
         <b-nav-item-dropdown

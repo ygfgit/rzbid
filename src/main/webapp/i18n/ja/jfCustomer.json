@@ -1,0 +1,24 @@
+{
+  "rzbidApp": {
+    "jfCustomer": {
+      "home": {
+        "title": "JfCustomers",
+        "refreshListLabel": "Refresh list",
+        "createLabel": "Jf Customer を追加",
+        "createOrEditLabel": "Jf Customerを追加または編集",
+        "notFound": "No Jf Customers found"
+      },
+      "created": "A new Jf Customer is created with identifier {{ param }}",
+      "updated": "A Jf Customer is updated with identifier {{ param }}",
+      "deleted": "A Jf Customer is deleted with identifier {{ param }}",
+      "delete": {
+        "question": "Jf Customer {{ id }}を削除してもよろしいですか？"
+      },
+      "detail": {
+        "title": "Jf Customer"
+      },
+      "id": "ID",
+      "name": "Name"
+    }
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "rzbidApp": {
+    "jfCompany": {
+      "home": {
+        "title": "JfCompanies",
+        "refreshListLabel": "Refresh list",
+        "createLabel": "Jf Company を追加",
+        "createOrEditLabel": "Jf Companyを追加または編集",
+        "notFound": "No Jf Companies found"
+      },
+      "created": "A new Jf Company is created with identifier {{ param }}",
+      "updated": "A Jf Company is updated with identifier {{ param }}",
+      "deleted": "A Jf Company is deleted with identifier {{ param }}",
+      "delete": {
+        "question": "Jf Company {{ id }}を削除してもよろしいですか？"
+      },
+      "detail": {
+        "title": "Jf Company"
+      },
+      "id": "ID",
+      "name": "Name"
+    }
+  }
+}

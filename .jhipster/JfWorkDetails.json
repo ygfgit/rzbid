@@ -1,0 +1,49 @@
+{
+  "name": "JfWorkDetails",
+  "fields": [
+    {
+      "fieldName": "rq",
+      "fieldType": "LocalDate",
+      "javadoc": "日期"
+    },
+    {
+      "fieldName": "lb",
+      "fieldType": "String",
+      "javadoc": "集疏港类别"
+    },
+    {
+      "fieldName": "shl",
+      "fieldType": "Double",
+      "javadoc": "数量"
+    },
+    {
+      "fieldName": "gq",
+      "fieldType": "String",
+      "javadoc": "罐区"
+    },
+    {
+      "fieldName": "syl",
+      "fieldType": "Double",
+      "javadoc": "港存剩余量"
+    }
+  ],
+  "relationships": [
+    {
+      "relationshipType": "many-to-one",
+      "otherEntityName": "jfWork",
+      "otherEntityRelationshipName": "detail",
+      "relationshipName": "master"
+    }
+  ],
+  "javadoc": "作业详细信息表\\n@author sysmart",
+  "entityTableName": "jf_wk_details",
+  "dto": "no",
+  "pagination": "pagination",
+  "service": "no",
+  "jpaMetamodelFiltering": false,
+  "fluentMethods": true,
+  "readOnly": false,
+  "embedded": false,
+  "applications": "*",
+  "changelogDate": "20210409055530"
+}

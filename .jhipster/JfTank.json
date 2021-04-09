@@ -1,0 +1,33 @@
+{
+  "name": "JfTank",
+  "fields": [
+    {
+      "fieldName": "zone",
+      "fieldType": "String",
+      "javadoc": "库区"
+    },
+    {
+      "fieldName": "code",
+      "fieldType": "String",
+      "javadoc": "罐号"
+    }
+  ],
+  "relationships": [
+    {
+      "relationshipType": "many-to-one",
+      "otherEntityName": "jfWork",
+      "otherEntityRelationshipName": "tank",
+      "relationshipName": "master"
+    }
+  ],
+  "entityTableName": "jf_tank",
+  "dto": "no",
+  "pagination": "no",
+  "service": "no",
+  "jpaMetamodelFiltering": false,
+  "fluentMethods": true,
+  "readOnly": false,
+  "embedded": false,
+  "applications": "*",
+  "changelogDate": "20210409055510"
+}

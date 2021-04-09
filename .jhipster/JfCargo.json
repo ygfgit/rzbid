@@ -1,0 +1,74 @@
+{
+  "name": "JfCargo",
+  "fields": [
+    {
+      "fieldName": "rq",
+      "fieldType": "LocalDate",
+      "javadoc": "集港时间"
+    },
+    {
+      "fieldName": "zygsdm",
+      "fieldType": "String",
+      "javadoc": "作业公司代码"
+    },
+    {
+      "fieldName": "hth",
+      "fieldType": "String",
+      "javadoc": "合同号"
+    },
+    {
+      "fieldName": "zywtrid",
+      "fieldType": "Long",
+      "javadoc": "作业委托人ID"
+    },
+    {
+      "fieldName": "zywtr",
+      "fieldType": "String",
+      "javadoc": "作业委托人"
+    },
+    {
+      "fieldName": "zhwchm",
+      "fieldType": "String",
+      "javadoc": "中文船名"
+    },
+    {
+      "fieldName": "hwmch",
+      "fieldType": "String",
+      "javadoc": "货物名称"
+    },
+    {
+      "fieldName": "gq",
+      "fieldType": "String",
+      "javadoc": "罐区"
+    },
+    {
+      "fieldName": "shl",
+      "fieldType": "Double",
+      "javadoc": "总重量"
+    },
+    {
+      "fieldName": "syl",
+      "fieldType": "Double",
+      "javadoc": "港存剩余量"
+    }
+  ],
+  "relationships": [
+    {
+      "relationshipType": "many-to-one",
+      "otherEntityName": "jfWork",
+      "otherEntityRelationshipName": "cargo",
+      "relationshipName": "master"
+    }
+  ],
+  "javadoc": "货物信息表\\n@author sysmart",
+  "entityTableName": "jf_cargo",
+  "dto": "no",
+  "pagination": "no",
+  "service": "no",
+  "jpaMetamodelFiltering": false,
+  "fluentMethods": true,
+  "readOnly": false,
+  "embedded": false,
+  "applications": "*",
+  "changelogDate": "20210409055507"
+}

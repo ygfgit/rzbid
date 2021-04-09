@@ -1,0 +1,57 @@
+{
+  "name": "JfWork",
+  "fields": [
+    {
+      "fieldName": "hwmch",
+      "fieldType": "String",
+      "javadoc": "货物名称"
+    },
+    {
+      "fieldName": "jhsl",
+      "fieldType": "Double",
+      "javadoc": "计划数量"
+    },
+    {
+      "fieldName": "bz",
+      "fieldType": "String",
+      "javadoc": "备注"
+    }
+  ],
+  "relationships": [
+    {
+      "relationshipType": "one-to-many",
+      "otherEntityName": "jfCargo",
+      "otherEntityRelationshipName": "master",
+      "relationshipName": "cargo"
+    },
+    {
+      "relationshipType": "one-to-many",
+      "otherEntityName": "jfTarget",
+      "otherEntityRelationshipName": "master",
+      "relationshipName": "taget"
+    },
+    {
+      "relationshipType": "one-to-many",
+      "otherEntityName": "jfTank",
+      "otherEntityRelationshipName": "master",
+      "relationshipName": "tank"
+    },
+    {
+      "relationshipType": "one-to-many",
+      "otherEntityName": "jfWorkDetails",
+      "otherEntityRelationshipName": "master",
+      "relationshipName": "detail"
+    }
+  ],
+  "javadoc": "表单提报主表\\n@author sysmart",
+  "entityTableName": "jf_work",
+  "dto": "no",
+  "pagination": "pagination",
+  "service": "no",
+  "jpaMetamodelFiltering": false,
+  "fluentMethods": true,
+  "readOnly": false,
+  "embedded": false,
+  "applications": "*",
+  "changelogDate": "20210409055511"
+}

@@ -1,0 +1,24 @@
+{
+  "rzbidApp": {
+    "jfCustomer": {
+      "home": {
+        "title": "Jf Customers",
+        "refreshListLabel": "Refresh list",
+        "createLabel": "创建新 Jf Customer",
+        "createOrEditLabel": "创建或编辑 Jf Customer",
+        "notFound": "No Jf Customers found"
+      },
+      "created": "Jf Customer {{ param }} 创建成功",
+      "updated": "Jf Customer {{ param }} 更新成功",
+      "deleted": "Jf Customer {{ param }} 删除成功",
+      "delete": {
+        "question": "你确定要删除 Jf Customer {{ id }} 吗？"
+      },
+      "detail": {
+        "title": "Jf Customer"
+      },
+      "id": "ID",
+      "name": "Name"
+    }
+  }
+}

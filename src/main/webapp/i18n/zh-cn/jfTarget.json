@@ -1,0 +1,28 @@
+{
+  "rzbidApp": {
+    "jfTarget": {
+      "home": {
+        "title": "Jf Targets",
+        "refreshListLabel": "Refresh list",
+        "createLabel": "创建新 Jf Target",
+        "createOrEditLabel": "创建或编辑 Jf Target",
+        "notFound": "No Jf Targets found"
+      },
+      "created": "Jf Target {{ param }} 创建成功",
+      "updated": "Jf Target {{ param }} 更新成功",
+      "deleted": "Jf Target {{ param }} 删除成功",
+      "delete": {
+        "question": "你确定要删除 Jf Target {{ id }} 吗？"
+      },
+      "detail": {
+        "title": "Jf Target"
+      },
+      "id": "ID",
+      "flzl": "Flzl",
+      "master": "Master",
+      "help": {
+        "flzl": "分流重量"
+      }
+    }
+  }
+}
