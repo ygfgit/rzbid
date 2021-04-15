@@ -16,6 +16,18 @@ entity JfCargo {
     syl	Double	 /** 	港存剩余量	 */ 
 }
 
+/**
+ * 货物细信息表
+ * @author sysmart
+ */
+entity JfCargoDetails(jf_wk_details)  {
+    rq	LocalDate	 /** 	日期	 */ 
+    lb	String 	 /** 	集疏港类别	 */ 
+    shl	Double 	 /** 	数量	 */ 
+    gq	String	 /** 	罐区	 */ 
+    syl	Double	 /** 	港存剩余量	 */ 
+}
+
 entity JfCustomer {
 	name String maxlength(50)
 }
@@ -34,10 +46,22 @@ entity JfTank {
  * @author sysmart
  */
 entity JfWork {
-    hwmch	String 	 /** 	货物名称	 */ 
-    jhsl	Double	 /** 	计划数量	 */ 
-    bz	String 	 /** 	备注	 */ 
+    curState JfWkStatus 	 /** 	提报状态(提报、审核、确认)	 */ 
+    cargoName	String 	 /** 	货物名称	 */ 
+    planNum	Double	 /** 	计划数量	 */ 
+    memos	String 	 /** 	备注	 */ 
+    opreraterId Long /** 操作人id */ 
+    oprerateName String /** 操作人姓名 */
+    oprerateDatetime LocalDate /** 操作时间 */
+    oprerateType String /** 操作类型（如删除、修改） */
+    oprerateByip String /** 操作人ip  */
+    oprerateBymac  String /** 主机 mac地址 */    
 }
+
+enum JfWkStatus {
+    REPORT, AUDIT, CONFIRM
+}
+
 /**
  * 流向信息表
  * @author sysmart
@@ -46,25 +70,14 @@ entity JfWork {
     flzl	Double	 /** 	分流重量	 */ 
 }
 
-/**
- * 作业详细信息表
- * @author sysmart
- */
-entity JfWorkDetails {
-    rq	LocalDate	 /** 	日期	 */ 
-    lb	String 	 /** 	集疏港类别	 */ 
-    shl	Double 	 /** 	数量	 */ 
-    gq	String	 /** 	罐区	 */ 
-    syl	Double	 /** 	港存剩余量	 */ 
-}
-
 relationship OneToMany {
-    JfWork{cargo} to JfCargo{master}
-    JfWork{taget} to JfTarget{master}
-    JfWork{tank} to JfTank{master}
-    JfWork{detail} to JfWorkDetails{master}
+    JfCargo{derails} to JfCargoDetails{cargo}
+
+    JfWork{cargo} to JfCargo{work}
+    JfWork{taget} to JfTarget{work}
+    JfTank{work} to JfWork{tank}
 }
 
 
-paginate JfWork, JfWorkDetails with pagination
+paginate JfWork, JfCargo, JfCargoDetails with pagination
 
