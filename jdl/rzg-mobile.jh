@@ -20,7 +20,7 @@ entity JfCargo {
  * 货物细信息表
  * @author sysmart
  */
-entity JfCargoDetails(jf_wk_details)  {
+entity JfCargoDetails(jf_cargo_detls) {
     rq	LocalDate	 /** 	日期	 */ 
     lb	String 	 /** 	集疏港类别	 */ 
     shl	Double 	 /** 	数量	 */ 
@@ -67,7 +67,7 @@ enum JfWkStatus {
  * @author sysmart
  */
  entity JfTarget {
-    flzl	Double	 /** 	分流重量	 */ 
+    weight	Double	 /** 	分流重量	 */ 
 }
 
 relationship OneToMany {
@@ -75,7 +75,7 @@ relationship OneToMany {
 
     JfWork{cargo} to JfCargo{work}
     JfWork{taget} to JfTarget{work}
-    JfTank{work} to JfWork{tank}
+    // JfTank{jwork} to JfWork{jtank}
 }
 
 
